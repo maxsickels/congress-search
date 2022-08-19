@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Library of Congress Search Tool</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body class="min-100-vh flex-column">
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+        <section class="card card-rounded col-7 bg-white">
+            <header class="card-header text-center">
+                <h2 class="text-white">
+                    Library of Congress Search Engine
+                </h2>
+            </header>
+            <div class="text-center p-4">
+                <p class="card-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    </div>
+                    <input id="user-query" type="text" class="form-control"
+                        aria-label="Text input with dropdown button">
+                </div>
+                </p>
+                <button class="btn btn-danger" id="fetch-button">
+                    Click Me
+                </button>
+            </div>
+            <div class="flex-column" id="users"></div>
+        </section>
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
