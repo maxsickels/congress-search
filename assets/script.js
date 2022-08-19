@@ -10,5 +10,7 @@ function redirectPage() {
     "./search-results.html" + "?q=" + userQuery + "&format=" + userFormat;
   document.location.replace(resultsPage);
   //Location. replace with^^
+  userQuery.text(userQuery.value);
+  userFormat.value = userFormat.value;
 }
 fetchButton.addEventListener("click", redirectPage);
